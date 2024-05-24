@@ -24,55 +24,33 @@
         }
 
         .connector {
-            /* Set the width of the connector element */
+
             width: 18.7%;
-            /* Full width for the horizontal line */
 
-            /* Set the height of the connector line */
             height: 4px;
-            /* Adjust the height of the connector line */
 
-            /* Set the background color of the connector line */
             background-color: blue;
-            /* Adjust the color as needed */
 
-
-
-            /* Set the left margin to position the connector horizontally */
             margin-left: 21.4%;
-            /* Adjust the left margin as needed */
 
-            /* Set the top position to separate it from the models */
             top: 41.7%;
-            /* Adjust the top position as needed */
 
-            /* Set the z-index to 1 for layering, ensuring it appears above other elements */
             z-index: 1;
-            /* Adjust the z-index as needed */
+
         }
 
         .connector1 {
-            /* Set the width of the connector element */
+
             width: 34.3%;
-            /* Full width for the horizontal line */
 
-            /* Set the height of the connector line */
             height: 4px;
-            /* Adjust the height of the connector line */
 
-            /* Set the background color of the connector line */
             background-color: red;
-            /* Adjust the color as needed */
 
-
-
-            /* Set the left margin to position the connector horizontally */
             margin-left: 17.5%;
-            /* Adjust the left margin as needed */
 
-            /* Set the top position to separate it from the models */
             top: 41%;
-            /* Adjust the top position as needed */
+
 
             z-index: 0;
 
@@ -80,13 +58,15 @@
 
         .vertical-line1 {
 
-            height: 228px;
+            height: 400px;
 
-            margin-left: 46%;
+            margin-left: 51%;
 
-            margin-top: -29.2%;
+            margin-top: -30%;
 
             position: absolute;
+
+            transform: rotate(45deg);
 
 
             border-color: green;
@@ -117,15 +97,17 @@
 
             height: 0.1px;
 
+            display: none;
+
         }
 
         .horizontal-line2 {
 
             width: 410px;
 
-            margin-left: 12%;
+            margin-left: 67%;
 
-            margin-top: -29.2%;
+            margin-top: -19.6%;
 
             position: absolute;
 
@@ -133,7 +115,7 @@
 
             border-style: groove;
 
-            transform: rotate(-3deg);
+            transform: rotate(30deg);
 
             z-index: 0;
 
@@ -145,15 +127,15 @@
 
         .salnted-line {
 
-            height: 600px;
+            height: 800px;
 
             width: 0.1px;
 
-            transform: rotate(60deg);
+            transform: rotate(65deg);
 
-            margin-left: 21.6%;
+            margin-left: 35%;
 
-            margin-top: -39.2%;
+            margin-top: -42%;
 
             position: absolute;
 
@@ -167,15 +149,14 @@
 
         .salnted-line1 {
 
-            height: 340px;
+            height: 200px;
 
             width: 0.1px;
 
-            transform: rotate(30deg);
 
-            margin-left: 35%;
+            margin-left: 62%;
 
-            margin-top: -30.8%;
+            margin-top: -26.2%;
 
             position: absolute;
 
@@ -189,15 +170,15 @@
 
         .vertical-line3 {
 
-            height: 400px;
+            height: 300px;
 
             width: 0.1px;
 
-            transform: rotate(-40deg);
+            transform: rotate(-95deg);
 
-            margin-left: 56%;
+            margin-left: 48.5%;
 
-            margin-top: -32%;
+            margin-top: -35.9%;
 
             position: absolute;
 
@@ -230,24 +211,12 @@
 
             z-index: 0;
 
+            display: none;
         }
 
 
 
-        /* Define animation */
-        @keyframes colorChange {
-            0% {
-                color: #2f0064;
-            }
-
-            50% {
-                color: #7700ff;
-            }
-
-            100% {
-                color: #2f0064;
-            }
-        }
+    
 
         .packet-button {
             /* Set the background color of the button to transparent */
@@ -298,10 +267,49 @@
         }
 
 
+        @keyframes Laptop2toPC2 {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
 
-        /* Apply animation to the span */
-        h1 span:hover {
-            animation: colorChange 5s infinite;
+            16.66% {
+                transform: translateY(-100%) translateX(0);
+            }
+
+           
+
+            33.32% {
+                transform: translateY(-100%) translateX(100%);
+            }
+
+            49.98% {
+                transform: translateY(0%) translateX(610%);
+            }
+
+            66.64% {
+                transform: translateY(-100%) translateX(100%);
+            }
+
+            83.3% {
+                transform: translateY(-100%) translateX(0);
+            }
+
+            100% {
+                transform: translateY(0) translateX(0);
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+        #Laptop2toPC2 {
+            animation: Laptop2toPC2 15s ease-in-out 4 forwards;
         }
     </style>
 
@@ -326,8 +334,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center logo-wrap">
-                    <div id="fh5co-logo"><a href="https://sritikamanjrekar.github.io/ARNetExperience/"><img
-                                src="logo.png" alt="logo" width="20%" /><span></span></a></div>
+                    <div id="fh5co-logo"><a href="https://arnetexperience.github.io/light_theme/"><img src="logo.png"
+                                alt="logo" width="20%" /><span></span></a></div>
 
 
 
@@ -336,11 +344,11 @@
 
                 <div class="col-xs-12 text-center menu-1 menu-wrap nav-links nav-btn">
                     <ul>
-                        <li><a href="https://sritikamanjrekar.github.io/ARNetExperience/">Home</a></li>
+                        <li><a href="https://arnetexperience.github.io/light_theme/">Home</a></li>
 
 
-                        <li><a href="https://sritikamanjrekar.github.io/ARNetExperience/#fh5co-about">About</a></li>
-                        <li><a href="https://sritikamanjrekar.github.io/ARNetExperience/learning.html">Start
+                        <li><a href="https://arnetexperience.github.io/light_theme/#fh5co-about">About</a></li>
+                        <li><a href="https://arnetexperience.github.io/light_theme/learning.html">Start
                                 Learning</a></li>
 
 
@@ -365,7 +373,7 @@
                             </div>
 
                         </li>
-                        <li><a href="https://sritikamanjrekar.github.io/ARNetExperience/contact.html">Contact</a></li>
+                        <li><a href="https://arnetexperience.github.io/light_theme/contact.html">Contact</a></li>
                     </ul>
 
                 </div>
@@ -378,15 +386,15 @@
 
     <div>
         <div style="margin-left: 86%;margin-top: -6%;">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://sritikamanjrekar.github.io/VLAN/"
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://arnetexperience.github.io/VLAN/"
                 target="_blank"><i class="ri-facebook-fill btn btn-primary" style="border-radius: 50%;"></i></a>
-            <a href="https://twitter.com/intent/tweet?url=https://sritikamanjrekar.github.io/VLAN/&text=Check%20out%20this%20awesome%20website!"
+            <a href="https://twitter.com/intent/tweet?url=https://arnetexperience.github.io/VLAN/&text=Check%20out%20this%20awesome%20website!"
                 target="_blank"><i class="ri-twitter-x-fill btn btn-success"
                     style="border-radius: 50%;margin-left: 3%;"></i></a>
-            <a href="https://www.linkedin.com/shareArticle?url=https://sritikamanjrekar.github.io/VLAN/"
+            <a href="https://www.linkedin.com/shareArticle?url=https://arnetexperience.github.io/VLAN/"
                 target="_blank"><i class="ri-linkedin-fill btn btn-info"
                     style="border-radius: 50%;margin-left: 3%;"></i></a>
-            <a href="whatsapp://send?text=Check%20out%20this%20awesome%20website!%20https://sritikamanjrekar.github.io/VLAN/"
+            <a href="whatsapp://send?text=Check%20out%20this%20awesome%20website!%20https://arnetexperience.github.io/VLAN/"
                 target="_blank">
                 <i class="ri-whatsapp-line btn btn-danger" style="border-radius: 50%;margin-left: 3%;"></i></a>
 
@@ -402,71 +410,71 @@
 
             <h3>Virtual Local Area Network (VLAN)</h3>
 
-            <div class="row" style="margin-left: 0%;">
+            <div class="row" style="width: 100%;margin-left: 0%;">
                 <!-- Similar containers for other model-viewer elements -->
-                <div class="model-viewer-container" style="background-color: #b2fca6; ">
+                <div class="model-viewer-container" style="margin-left: 20%;">
                     <model-viewer src="router 2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
                         poster="poster.webp" shadow-intensity="1" style="margin: 0;z-index: 1;">
-                        <button class="Hotspot" style="border-radius: 100%;" slot="hotspot-1"
+                        <button class="Hotspot transparent-button" style="border-radius: 100%;" slot="hotspot-1"
                             data-position="37.69583283935017m 4.179193256400421m -51.57656243125259m"
                             data-normal="0.006317747746330481m 0.8348694792995796m -0.5504116991829504m"
                             data-visibility-attribute="visible" data-bs-toggle="modal" data-bs-target="#Router2Led">
-                            <div class="HotspotAnnotation" style="font-size:8px;"><b>1</b></div>
+                            <div class="HotspotAnnotation " style="font-size:8px;"><b>1</b></div>
                         </button>
 
-                        <button class="Hotspot " style="border-radius: 100%;" slot="hotspot-1"
+                        <button class="Hotspot transparent-button" style="border-radius: 100%;" slot="hotspot-1"
                             data-position="-0.3749784954434645m 32.58163092195337m -10.35857489224265m"
                             data-normal="0.0017078448797659893m 0.8294415367891209m -0.5585909239459302m"
                             data-visibility-attribute="visible" data-bs-toggle="modal"
                             data-bs-target="#Router2IPAddress">
-                            <div class="HotspotAnnotation" style="font-size:8px;"><b>2</b></div>
+                            <div class="HotspotAnnotation " style="font-size:8px;"><b>2</b></div>
                         </button>
 
-                        <button class="Hotspot" style="border-radius: 100%;" slot="hotspot-2"
+                        <button class="Hotspot transparent-button" style="border-radius: 100%;" slot="hotspot-2"
                             data-position="135.16326578752825m 239.44476987204035m 104.58417854752453m"
                             data-normal="-0.3023598593036365m 0.08772456858763628m 0.9491485213326724m"
                             data-visibility-attribute="visible" data-bs-toggle="modal"
                             data-bs-target="#Router2Antennae">
-                            <div class="HotspotAnnotation" style="font-size:8px;"><b>3</b></div>
+                            <div class="HotspotAnnotation " style="font-size:8px;"><b>3</b></div>
                         </button>
 
-                        <button class="Hotspot" style="border-radius: 100%;" slot="hotspot-4"
+                        <button class="Hotspot transparent-button" style="border-radius: 100%;" slot="hotspot-4"
                             data-position="88.68420945971755m 37.07484256823129m 90.24227904773002m"
                             data-normal="-0.006649449923m 0.035971938355325576m 0.9993306782375304m"
                             data-visibility-attribute="visible" data-bs-toggle="modal"
                             data-bs-target="#Router2ResetPort">
-                            <div class="HotspotAnnotation" style="font-size:8px;"><b>4</b></div>
+                            <div class="HotspotAnnotation " style="font-size:8px;"><b>4</b></div>
                         </button>
 
-                        <button class="Hotspot" style="border-radius: 100%;" slot="hotspot-5"
+                        <button class="Hotspot transparent-button" style="border-radius: 100%;" slot="hotspot-5"
                             data-position="47.33098605286284m 21.414614725837566m 90.94919976528135m"
                             data-normal="-0.006632683433363047m 0.027969467700564785m 0.999586772815157m"
                             data-visibility-attribute="visible" data-bs-toggle="modal"
                             data-bs-target="#Router2PowerConnection">
-                            <div class="HotspotAnnotation" style="font-size:8px;"><b>5</b></div>
+                            <div class="HotspotAnnotation " style="font-size:8px;"><b>5</b></div>
                         </button>
 
-                        <button class="Hotspot" style="border-radius: 100%;" slot="hotspot-6"
+                        <button class="Hotspot transparent-button" style="border-radius: 100%;" slot="hotspot-6"
                             data-position="-0.8094441831126034m 33.45344550357601m 72.74334285260217m"
                             data-normal="-0.00698152627196316m 0.33872976862502435m 0.9408578012314887m"
                             data-visibility-attribute="visible" data-bs-toggle="modal"
                             data-bs-target="#Router2InternetPort">
-                            <div class="HotspotAnnotation" style="font-size:8px;"><b>6</b></div>
+                            <div class="HotspotAnnotation " style="font-size:8px;"><b>6</b></div>
                         </button>
 
 
-                        <button class="Hotspot" style="border-radius: 100%;" slot="hotspot-7"
+                        <button class="Hotspot transparent-button" style="border-radius: 100%;" slot="hotspot-7"
                             data-position="-57.48814300733627m 30.28332503405524m 73.46407912897116m"
                             data-normal="-0.006981526271955822m 0.33872976862497106m 0.940857801231508m"
                             data-visibility-attribute="visible" data-bs-toggle="modal" data-bs-target="#Router2LANPort">
-                            <div class="HotspotAnnotation" style="font-size:8px;"><b>7</b></div>
+                            <div class="HotspotAnnotation " style="font-size:8px;"><b>7</b></div>
                         </button>
 
                     </model-viewer>
 
                 </div>
 
-                <div class="model-viewer-container" style="background-color: #b2fca6;  ">
+                <div class="model-viewer-container">
 
 
 
@@ -475,7 +483,7 @@
                         <button class="Hotspot transparent-button btn btn-sm" slot="hotspot-1"
                             data-position="-17.82355475016235m 6.123874902725213m -167.32013377219792m"
                             data-normal="0m 1m 0m" data-visibility-attribute="visible" data-bs-toggle="modal"
-                            data-bs-target="#Switch">
+                            data-bs-target="#switch">
                             <div class="HotspotAnnotation">Switch</div>
                         </button>
 
@@ -484,7 +492,7 @@
 
                 </div>
 
-                <div style="background-color: #9ee294;width: 39%; ">
+                <!-- <div style="background-color: #9ee294;width: 39%; ">
 
                     <p class="text-black">VLAN 30 Home Network</p>
 
@@ -500,7 +508,7 @@
 
                     </model-viewer>
 
-                </div>
+                </div> -->
 
 
             </div>
@@ -510,7 +518,7 @@
 
             <div class="row" style="margin-left: 0%;">
 
-                <div style="width: 20%;background-color: #6b9c64;">
+                <div style="width: 25%;background-color: #8fd185;">
                     <p class="text-white">VLAN 10 Office Network</p>
 
                     <model-viewer src="laptop (3).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
@@ -528,7 +536,7 @@
 
                 </div>
 
-                <div style="background-color: #6b9c64;width: 20%; ">
+                <div style="background-color: #8fd185;width: 25%; ">
 
 
 
@@ -546,7 +554,7 @@
 
                 </div>
 
-                <div style="width: 20%;background-color: #7bb473;">
+                <div style="width: 25%;background-color: #b2fca6;">
 
 
                     <model-viewer src="laptop (3).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
@@ -566,7 +574,7 @@
 
                 </div>
 
-                <div style="background-color: #7bb473; width: 20%;">
+                <div style="background-color: #b2fca6; width: 24.2%;">
 
 
 
@@ -584,7 +592,7 @@
 
                 </div>
 
-                <div style="width: 20%;background-color: #9ee294;">
+                <!-- <div style="width: 20%;background-color: #9ee294;">
 
 
                     <model-viewer src="laptop (3).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
@@ -600,7 +608,7 @@
 
                     </model-viewer>
 
-                </div>
+                </div> -->
 
 
 
@@ -608,24 +616,24 @@
 
 
 
-            <div class="vertical-line1" data-bs-toggle="modal" data-bs-target="#Connector"></div>
+            <div class="vertical-line1" data-bs-toggle="modal" data-bs-target="#FastEthernet"></div>
 
 
 
 
 
-            <!-- <div class="connector" data-bs-toggle="modal" data-bs-target="#Connector"></div> -->
+            <!-- <div class="connector" data-bs-toggle="modal" data-bs-target="#FastEthernet"></div> -->
 
 
 
 
-            <!-- <div class="connector1" data-bs-toggle="modal" data-bs-target="#Connector"></div> -->
+            <!-- <div class="connector1" data-bs-toggle="modal" data-bs-target="#FastEthernet"></div> -->
 
 
 
 
-            <div class="salnted-line" data-bs-toggle="modal" data-bs-target="#Connector"></div>
-            <div class="salnted-line1" data-bs-toggle="modal" data-bs-target="#Connector"></div>
+            <div class="salnted-line" data-bs-toggle="modal" data-bs-target="#FastEthernet"></div>
+            <div class="salnted-line1" data-bs-toggle="modal" data-bs-target="#FastEthernet"></div>
 
 
             <!-- margin-top: -50%;margin-left: -5%;z-index: 2; -->
@@ -634,12 +642,12 @@
 
 
 
-            <div class="vertical-line2" data-bs-toggle="modal" data-bs-target="#Connector"></div>
-            <div class="horizontal-line2" data-bs-toggle="modal" data-bs-target="#Connector"></div>
+            <div class="vertical-line2" data-bs-toggle="modal" data-bs-target="#FastEthernet"></div>
+            <div class="horizontal-line2" data-bs-toggle="modal" data-bs-target="#FastEthernet"></div>
 
-            <div class="vertical-line3" data-bs-toggle="modal" data-bs-target="#Connector"></div>
+            <div class="vertical-line3" data-bs-toggle="modal" data-bs-target="#FastEthernet"></div>
 
-            <div class="vertical-line4" data-bs-toggle="modal" data-bs-target="#Connector"></div>
+            <div class="vertical-line4" data-bs-toggle="modal" data-bs-target="#FastEthernet"></div>
 
 
 
@@ -649,10 +657,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">LED Lights</h1>
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">LED Lights</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-black">
                             Lights indicate signal power, internet, and port status to keep users informed.
                             <img src="1.png" width="100%" height="100%">
 
@@ -675,10 +683,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Router</h1>
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Router</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-black">
                             IP Adress > 10.10.10.1
                             <img src="2.png" width="100%" height="100%">
                         </div>
@@ -696,10 +704,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Antennae</h1>
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Antennae</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-black">
                             Antennae broadcast wireless signals in your home network.
                             <img src="3.png" width="100%" height="100%">
                         </div>
@@ -717,10 +725,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Reset Port</h1>
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Reset Port</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-black">
                             Port for resetting router to factory defaults.
                             <img src="4.png" width="100%" height="100%">
                         </div>
@@ -738,10 +746,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Power Connection</h1>
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Power Connection</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-black">
                             Power adapter port for router connection.
                             <img src="5.png" width="100%" height="100%">
                         </div>
@@ -759,10 +767,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">WAN/Internet Port</h1>
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">WAN/Internet Port</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-black">
                             Connect modem or transceiver to link home network to internet.
                             <img src="6.png" width="100%" height="100%">
                         </div>
@@ -780,10 +788,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">LAN Ports</h1>
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">LAN Ports</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-black">
                             Ports for wired devices on home network without wireless capability.
                             <img src="7.png" width="100%" height="100%">
                         </div>
@@ -794,6 +802,66 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="modal fade" id="switch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">WS-C3650-48PS-S Cisco
+                                Catalyst 3650 Network Switch</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <center><img src="switch.jpg" width="50%"></center>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Okay</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="FastEthernet" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #000000;">Fast Ethernet
+                                Cable
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <center>
+                                <img src="fastethernet.jpg" alt="cross over copper cable" width="40%">
+                            </center>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Okay</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-viewer-container">
+
+                <model-viewer src="packet send.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                    tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="Laptop2toPC2"
+                    style="width: 5%;z-index: 3;margin-top: -18%;margin-left: 60%;position: absolute; ">
+                    <button class="Hotspot packet-button btn btn-sm" slot="hotspot-2"
+                        data-position="-0.003848217995850542m -0.14425149508449575m 0.15079345864210944m"
+                        data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible"
+                        data-bs-toggle="modal" data-bs-target="#Laptop2toPC2model">
+                        <div class="HotspotAnnotation">Packet</div>
+                    </button>
+                </model-viewer>
+
             </div>
 
 
@@ -825,7 +893,7 @@
                 <div class="row row-pb-md">
                     <div class="col-md-4 fh5co-widget">
                         <!-- <h4 style="color: #ffffff;">ARNetExperience</h4> -->
-                        <a href="https://sritikamanjrekar.github.io/ARNetExperience/"><img src="logo.png" alt=""
+                        <a href="https://arnetexperience.github.io/light_theme"><img src="logo.png" alt=""
                                 width="60%"></a>
                         <br><br>
                         <p style="color: #000000;">Step into the Future of Learning with ARNetExperience | Explore
@@ -837,11 +905,11 @@
                         <h4>Links</h4>
                         <ul class="fh5co-footer-links">
                             <li><a href="https://arnetexperience.github.io/light_theme/index.html">Home</a></li>
-							<li><a href="https://arnetexperience.github.io/light_theme/#fh5co-about">About</a></li>
-							<li><a href="https://arnetexperience.github.io/light_theme/learning.html">Start
-									Learning</a></li>
-							<li><a href="https://arnetexperience.github.io/light_theme/contact.html">Contact</a>
-							</li>
+                            <li><a href="https://arnetexperience.github.io/light_theme/#fh5co-about">About</a></li>
+                            <li><a href="https://arnetexperience.github.io/light_theme/learning.html">Start
+                                    Learning</a></li>
+                            <li><a href="https://arnetexperience.github.io/light_theme/contact.html">Contact</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -931,7 +999,7 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"></script>
 
-            <script src="https://kit.fontawesome.com/ea03fb3bf9.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ea03fb3bf9.js" crossorigin="anonymous"></script>
 
 
 

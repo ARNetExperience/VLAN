@@ -1,0 +1,66 @@
+switch
+
+Router 192.168.10.1
+192.168.11.1
+
+VLAN 10
+PC1 192.168.10.2, subnmet mask 255.255.255.0, default gateway 192.169.10.1
+Latop1 192.168.10.3, subnmet mask 255.255.255.0, default gateway 192.169.10.1
+
+VLAN 20
+PC2 192.168.11.2, subnmet mask 255.255.255.0, default gateway 192.169.11.1
+Laptop 192.168.11.3, subnmet mask 255.255.255.0, default gateway 192.169.11.1
+
+
+Switch Configuration CLI:-
+
+switch>enable
+
+
+switch#vlan 10 office_network
+VLAN 10 added:
+	Name: office_network
+
+switch#vlan 20 college_network
+VLAN 20 added:
+	Name: college_network
+
+switch#exit
+APPLY completed.
+Exiting....
+
+switch#show vlan
+
+VLAN Name		status
+10   office_network	active
+20   college_network	active
+
+
+
+PC1 Command Prompt:-
+>ping 192.168.11.2
+
+Pinging 192.168.11.2 with 32 bytes of data:
+
+Reply from 192.168.11.2: bytes=32 time=1ms TTL=127
+Reply from 192.168.11.2: bytes=32 time<1ms TTL=127
+Reply from 192.168.11.2: bytes=32 time=1ms TTL=127
+Reply from 192.168.11.2: bytes=32 time<1ms TTL=127
+
+Ping statistics for 192.168.11.2:
+	Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+
+LAN
+
+PAN
+
+CAN
+
+MAN
+
+WAN
+
+SAN
