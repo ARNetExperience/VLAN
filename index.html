@@ -216,7 +216,7 @@
 
 
 
-    
+
 
         .packet-button {
             /* Set the background color of the button to transparent */
@@ -276,7 +276,7 @@
                 transform: translateY(-100%) translateX(0);
             }
 
-           
+
 
             33.32% {
                 transform: translateY(-100%) translateX(100%);
@@ -527,7 +527,7 @@
                         <button class="Hotspot transparent-button btn btn-sm" slot="hotspot-3"
                             data-position="10.066504518301514m 69.27750186888898m 718.4284188104473m"
                             data-normal="0m 0.4745439042365091m 0.8802318347753455m" data-visibility-attribute="visible"
-                            data-bs-toggle="modal" data-bs-target="#laptop3IpAddress">
+                            data-bs-toggle="modal" data-bs-target="#Laptop-1IpAddress">
                             <div class="HotspotAnnotation">Laptop 1</div>
                         </button>
 
@@ -546,7 +546,7 @@
                         <button class="Hotspot transparent-button btn btn-sm" slot="hotspot-1"
                             data-position="-0.043771782138294135m -0.0007097379525175529m 0.5965980096034809m"
                             data-normal="0m 1.6292067894774223e-7m 0.9999999999999868m"
-                            data-visibility-attribute="visible" data-bs-toggle="modal" data-bs-target="#PC1Browser">
+                            data-visibility-attribute="visible" data-bs-toggle="modal" data-bs-target="#PC-1IpAddress">
                             <div class="HotspotAnnotation">PC-1</div>
                         </button>
 
@@ -563,7 +563,7 @@
                         <button class="Hotspot transparent-button btn btn-sm" slot="hotspot-3"
                             data-position="10.066504518301514m 69.27750186888898m 718.4284188104473m"
                             data-normal="0m 0.4745439042365091m 0.8802318347753455m" data-visibility-attribute="visible"
-                            data-bs-toggle="modal" data-bs-target="#laptop3IpAddress">
+                            data-bs-toggle="modal" data-bs-target="#Laptop-2IpAddress">
                             <div class="HotspotAnnotation">Laptop 2</div>
                         </button>
 
@@ -584,7 +584,7 @@
                         <button class="Hotspot transparent-button btn btn-sm" slot="hotspot-1"
                             data-position="-0.043771782138294135m -0.0007097379525175529m 0.5965980096034809m"
                             data-normal="0m 1.6292067894774223e-7m 0.9999999999999868m"
-                            data-visibility-attribute="visible" data-bs-toggle="modal" data-bs-target="#PC1Browser">
+                            data-visibility-attribute="visible" data-bs-toggle="modal" data-bs-target="#PC-2IpAddress">
                             <div class="HotspotAnnotation">PC-2</div>
                         </button>
 
@@ -687,7 +687,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
                         <div class="modal-body text-black">
-                            IP Adress > 10.10.10.1
+
                             <img src="2.png" width="100%" height="100%">
                         </div>
                         <div class="modal-footer">
@@ -817,6 +817,9 @@
 
                         </div>
                         <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#SwitchCMD">Open CLI</button>
+
                             <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Okay</button>
                             <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                         </div>
@@ -863,6 +866,308 @@
                 </model-viewer>
 
             </div>
+
+
+            <div class="modal fade" id="Laptop-1IpAddress" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #000000;">Windows OS
+                                Laptop-1
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                id="Laptop-1IPAdressCloseBtn"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            <center><img src="laptop.jpg" width="35%"></center><br>
+                            <input type="text" id="textToCopy1" value="192.168.10.2" hidden>
+
+                            IP Address > 192.168.10.2
+                            <i class="ri-file-copy-line btn btn-outline-success btn-sm" onclick="copyText1()"></i>
+                            <span class="text-success" id="copyTextMessage1"></span>
+                            Subnet Mask > 255.255.255.0<br>
+                            Degault Gateway > 192.168.10.1<br>
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#Laptop-1CMD">Open Command Prompt</button>
+                            <button type="button" class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="Laptop-2IpAddress" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #000000;">Windows OS
+                                Laptop-2
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                id="Laptop-2IPAdressCloseBtn"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            <center><img src="laptop.jpg" width="35%"></center><br>
+                            <input type="text" id="textToCopy3" value="192.168.11.2" hidden>
+
+                            IP Address > 192.168.11.2
+                            <i class="ri-file-copy-line btn btn-outline-success btn-sm" onclick="copyText3()"></i>
+                            <span class="text-success" id="copyTextMessage3"></span>
+                            Subnet Mask > 255.255.255.0<br>
+                            Degault Gateway > 192.168.11.1<br>
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#Laptop-2CMD">Open Command Prompt</button>
+                            <button type="button" class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="PC-1IpAddress" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #000000;">PC-1
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                id="PC-1IPAdressCloseBtn"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            <center><img src="PC.PNG" width="50%"></center><br>
+                            <input type="text" id="textToCopy2" value="192.168.10.3" hidden>
+
+                            IP Address > 192.168.10.3
+                            <i class="ri-file-copy-line btn btn-outline-success btn-sm" onclick="copyText2()"></i>
+                            <span class="text-success" id="copyTextMessage2"></span>
+                            Subnet Mask > 255.255.255.0<br>
+                            Degault Gateway > 192.168.10.1<br>
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#PC-1CMD">Open Command Prompt</button>
+                            <button type="button" class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="PC-2IpAddress" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #000000;">PC-2
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                id="PC-2IPAdressCloseBtn"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            <center><img src="PC.PNG" width="50%"></center><br>
+                            <input type="text" id="textToCopy4" value="192.168.11.3" hidden>
+                            IP Address > 192.168.11.3
+                            &ensp;
+                            <i class="ri-file-copy-line btn btn-outline-success btn-sm" onclick="copyText4()"></i>
+                            <span class="text-success" id="copyTextMessage4"></span>
+                            Subnet Mask > 255.255.255.0<br>
+                            Degault Gateway > 192.168.11.1<br>
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#PC-2CMD">Open Command Prompt</button>
+                            <button type="button" class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade " id="SwitchCMD" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Command Line Interface (CLI)
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="console">
+                                <div class="output" id="output1">
+
+                                </div>
+                                <div class="input">
+                                    <input type="text" id="inputCmd1" placeholder="Type your command here...">
+                                    <button onclick="executeCommand1()" class="btn btn-primary btn-lg">Enter</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" onclick="autoexecuteCommand1()"
+                                id="Switchauto_cmd">Auto Execute
+                                Commands</button>
+                            <button type="button" class="btn btn-primary" onclick="SwitchCommandListFile()">Command
+                                Reference</button>
+                            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade " id="Laptop-1CMD" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Laptop 1 Command Prompt
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="console">
+                                <div class="output" id="output2">
+                                    Laptop 1 Command Line 1.0
+                                </div>
+                                <div class="input">
+                                    <input type="text" id="inputCmd2" placeholder="Type your command here...">
+                                    <button onclick="executeCommand2()" class="btn btn-primary btn-lg">Enter</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade " id="PC-1CMD" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">PC-1 Command Prompt
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="console">
+                                <div class="output" id="output3">
+                                    PC 1 Command Line 1.0
+                                </div>
+                                <div class="input">
+                                    <input type="text" id="inputCmd3" placeholder="Type your command here...">
+                                    <button onclick="executeCommand3()" class="btn btn-primary btn-lg">Enter</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                           
+                            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade " id="Laptop-2CMD" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Laptop 2 Command Prompt
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="console">
+                                <div class="output" id="output4">
+                                    Laptop 2 Command Line 1.0
+                                </div>
+                                <div class="input">
+                                    <input type="text" id="inputCmd4" placeholder="Type your command here...">
+                                    <button onclick="executeCommand4()" class="btn btn-primary btn-lg">Enter</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                           
+                            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade " id="PC-2CMD" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">PC-2 Command Prompt
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="console">
+                                <div class="output" id="output5">
+                                    PC 2 Command Line 1.0
+                                </div>
+                                <div class="input">
+                                    <input type="text" id="inputCmd5" placeholder="Type your command here...">
+                                    <button onclick="executeCommand5()" class="btn btn-primary btn-lg">Enter</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                          
+                            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
 
@@ -967,6 +1272,584 @@
 
 
         <script>
+
+            var currentState1 = 0;
+            var switchState = false;
+
+
+            function executeCommand1() {
+
+                //alert("hello");
+
+
+                var input1 = document.getElementById('inputCmd1').value.trim();
+                var outputDiv1 = document.getElementById('output1');
+
+                if (input1 === '') {
+                    outputDiv1.innerHTML += '<p>switch>Please enter a command.</p>';
+                    return;
+                }
+
+
+
+                // Check the current state
+                switch (currentState1) {
+                    case 0: // Initial state: expecting "router bgp 100"
+
+                        if (input1 !== 'enable') {
+                            outputDiv1.innerHTML += '<p>switch>Invalid command. Please enter "enable".</p>';
+                            return;
+                        }
+
+
+                        outputDiv1.innerHTML += '<p>switch>enable</p>';
+
+                        alert('Please enter "vlan 10 office_network"');
+                        break;
+
+
+
+                        break;
+                    case 1:
+
+                        if (input1 !== 'vlan 10 office_network') {
+                            outputDiv1.innerHTML += '<p>switch>Invalid command. Please enter "vlan 10 office_network".</p>';
+                            return;
+                        }
+
+
+                        outputDiv1.innerHTML += '<p>switch>vlan 10 office_network</p>';
+                        outputDiv1.innerHTML += '<p>VLAN 10 added:<br>&ensp;Name: office_network</p>';
+
+                        alert('Please enter "vlan 20 college_network"');
+                        break;
+
+                    case 2:
+
+                        if (input1 !== 'vlan 20 college_network') {
+                            outputDiv1.innerHTML += '<p>switch>Invalid command. Please enter "vlan 20 college_network".</p>';
+                            return;
+                        }
+
+
+                        outputDiv1.innerHTML += '<p>switch>vlan 20 college_network</p>';
+                        outputDiv1.innerHTML += '<p>VLAN 20 added:<br>&ensp;Name: college_network</p>';
+
+                        alert('Please enter "exit"');
+                        break;
+
+
+                    case 3:
+
+                        if (input1 !== 'exit') {
+                            outputDiv1.innerHTML += '<p>switch>Invalid command. Please enter "exit".</p>';
+                            return;
+                        }
+
+
+                        outputDiv1.innerHTML += '<p>switch#exit</p>';
+                        outputDiv1.innerHTML += '<p>APPLY completed.<br>&ensp;Exiting....</p>';
+
+                        alert('Please enter "show vlan"');
+                        break;
+
+
+                    case 4:
+
+                        if (input1 !== 'show vlan') {
+                            outputDiv1.innerHTML += '<p>switch>Invalid command. Please enter "show vlan".</p>';
+                            return;
+                        }
+
+
+                        outputDiv1.innerHTML += '<p>switch#show vlan</p>';
+                        outputDiv1.innerHTML += '<table style="border: 2px solid white;"><tr style="border: 2px solid white;"><th style="border: 2px solid white;">&ensp;VLAN&ensp;</th><th style="border: 2px solid white;">&ensp;Name</th><th style="border: 2px solid white;">&ensp;Status&ensp;</th></tr><tr style="border: 2px solid white;"><td style="border: 2px solid white;">&ensp;10&ensp;</td><td style="border: 2px solid white;">&ensp;office_network&ensp;</td><td style="border: 2px solid white;">&ensp;active&ensp;</td></tr><tr><td style="border: 2px solid white;">&ensp;20&ensp;</td><td style="border: 2px solid white;">&ensp;college_network&ensp;</td><td style="border: 2px solid white;">&ensp;active&ensp;</td></tr></table>';
+                        document.getElementById("Switchauto_cmd").disabled = true;
+                        switchState = true;
+
+
+                        alert('Configuration of Switch is done for VLAN.\n\nNow you ping ip_address of PC/Laptop by clicking on their name then click on "Open Command Prompt" to send packet.');
+                        break;
+
+
+
+
+
+                }
+
+
+                currentState1++;
+
+                // Clear input field after command execution
+                document.getElementById('inputCmd1').value = '';
+
+                // Scroll to the bottom after a slight delay
+                setTimeout(function () {
+                    var outputDiv1 = document.getElementById('output1');
+                    outputDiv1.scrollTop = outputDiv1.scrollHeight;
+                }, 50);
+            }
+
+
+            function autoexecuteCommand1() {
+                document.getElementById("Switchauto_cmd").disabled = true;
+
+                if (currentState1 > 0) {
+                    if (currentState1 > 0 && currentState1 < 4) {
+                        alert('Already Configuration for Switch is in process.');
+                    }
+                    if (currentState1 == 4) {
+                        alert('Already Configuration is done for Switch.')
+                    }
+                    return;
+                } else {
+
+                    currentState1 = 5;
+
+                    var outputDiv1 = document.getElementById('output1');
+
+                    outputDiv1.innerHTML += '<p>switch>enable</p>';
+
+                    outputDiv1.innerHTML += '<p>switch>vlan 10 office_network</p>';
+                    outputDiv1.innerHTML += '<p>VLAN 10 added:<br>&ensp;Name: office_network</p>';
+                    outputDiv1.innerHTML += '<p>switch>vlan 20 college_network</p>';
+                    outputDiv1.innerHTML += '<p>VLAN 20 added:<br>&ensp;Name: college_network</p>';
+                    outputDiv1.innerHTML += '<p>switch#exit</p>';
+                    outputDiv1.innerHTML += '<p>APPLY completed.<br>&ensp;Exiting....</p>';
+                    outputDiv1.innerHTML += '<p>switch#show vlan</p>';
+                    outputDiv1.innerHTML += '<table style="border: 2px solid white;"><tr style="border: 2px solid white;"><th style="border: 2px solid white;">&ensp;VLAN&ensp;</th><th style="border: 2px solid white;">&ensp;Name</th><th style="border: 2px solid white;">&ensp;Status&ensp;</th></tr><tr style="border: 2px solid white;"><td style="border: 2px solid white;">&ensp;10&ensp;</td><td style="border: 2px solid white;">&ensp;office_network&ensp;</td><td style="border: 2px solid white;">&ensp;active&ensp;</td></tr><tr><td style="border: 2px solid white;">&ensp;20&ensp;</td><td style="border: 2px solid white;">&ensp;college_network&ensp;</td><td style="border: 2px solid white;">&ensp;active&ensp;</td></tr></table>';
+                    document.getElementById("Switchauto_cmd").disabled = true;
+
+
+
+                    switchState = true;
+
+                    alert('Configuration of Switch is done for VLAN.\n\nNow you ping ip_address of PC/Laptop by clicking on their name then click on "Open Command Prompt" to send packet.');
+
+                }
+            }
+
+            function SwitchCommandListFile() {
+                window.open('SwitchCmd.html', '_blank');
+            }
+
+            //Laptop 1
+            function executeCommand2() {
+
+                //alert("hello");
+
+
+                var input2 = document.getElementById('inputCmd2').value.trim();
+                var outputDiv2 = document.getElementById('output2');
+
+                if (input2 === '') {
+                    outputDiv2.innerHTML += '<p>>Please enter a command.</p>';
+                    return;
+                }
+
+                if (switchState == false) {
+                    alert('Please configure the switch.\n\nClick on button "Switch"');
+                    return;
+                }
+
+
+
+                if (input2 === 'ping 192.168.10.3' && switchState == true) {
+                    outputDiv2.innerHTML += '<p>>ping 192.168.10.3</p>';
+                    outputDiv2.innerHTML += '<p>Pinging 192.168.10.3 with 32 bytes of data:<br></p>';
+
+                    outputDiv2.innerHTML += '<p>Reply from 192.168.10.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.3: bytes=32 time<1ms TTL=127<br>Reply from 192.168.10.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.3: bytes=32 time<1ms TTL=127</p>';
+
+                    outputDiv2.innerHTML += '<p>Ping statistics for 192.168.10.3:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                    //animation
+
+                    //alert message
+
+                    return;
+
+                }
+
+
+                else if (input2 === 'ping 192.168.11.2' && switchState == true) {
+                    outputDiv2.innerHTML += '<p>>ping 192.168.11.2</p>';
+
+                    outputDiv2.innerHTML += '<p>Pinging 192.168.11.2 with 32 bytes of data:<br></p>';
+
+                    outputDiv2.innerHTML += '<p>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127</p>';
+
+                    outputDiv2.innerHTML += '<p>Ping statistics for 192.168.11.2:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                    //animation
+
+                    //alert message
+
+
+                    return;
+
+                }
+
+
+                else if (input2 === 'ping 192.168.11.3' && switchState == true) {
+                    outputDiv2.innerHTML += '<p>>ping 192.168.11.3</p>';
+
+                    outputDiv2.innerHTML += '<p>Pinging 192.168.11.3 with 32 bytes of data:<br></p>';
+
+                    outputDiv2.innerHTML += '<p>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127</p>';
+
+                    outputDiv2.innerHTML += '<p>Ping statistics for 192.168.11.3:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                    //animation
+
+                    //alert message
+
+                } else {
+                    alert("Try available IP Address. Copy IP Address by clicking device name button.");
+                    return;
+                }
+
+
+                // Clear input field after command execution
+                document.getElementById('inputCmd2').value = '';
+
+                // Scroll to the bottom after a slight delay
+                setTimeout(function () {
+                    var outputDiv2 = document.getElementById('output2');
+                    outputDiv2.scrollTop = outputDiv2.scrollHeight;
+                }, 50);
+            }
+
+            //PC-1
+            function executeCommand3() {
+
+                //alert("hello");
+
+
+                var input3 = document.getElementById('inputCmd3').value.trim();
+                var outputDiv3 = document.getElementById('output3');
+
+                if (input3 === '') {
+                    outputDiv3.innerHTML += '<p>>Please enter a command.</p>';
+                    return;
+                }
+
+                if (switchState == false) {
+                    alert('Please configure the switch.\n\nClick on button "Switch"');
+                }
+
+
+                if (switchState == true) {
+                    if (input3 === 'ping 192.168.10.2') {
+                        outputDiv3.innerHTML += '<p>>ping 192.168.10.2</p>';
+                        outputDiv3.innerHTML += '<p>Pinging 192.168.10.2 with 32 bytes of data:<br></p>';
+
+                        outputDiv3.innerHTML += '<p>Reply from 192.168.10.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.2: bytes=32 time<1ms TTL=127<br>Reply from 192.168.10.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.2: bytes=32 time<1ms TTL=127</p>';
+
+                        outputDiv3.innerHTML += '<p>Ping statistics for 192.168.10.2:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                        //animation
+
+                        //alert message
+                        return;
+                    }
+
+
+                    else if (input3 === 'ping 192.168.11.2') {
+                        outputDiv3.innerHTML += '<p>>ping 192.168.11.2</p>';
+
+                        outputDiv3.innerHTML += '<p>Pinging 192.168.11.2 with 32 bytes of data:<br></p>';
+
+                        outputDiv3.innerHTML += '<p>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127</p>';
+
+                        outputDiv3.innerHTML += '<p>Ping statistics for 192.168.11.2:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                        //animation
+
+                        //alert message
+                        return;
+                    }
+
+
+                    else if (input3 === 'ping 192.168.11.3') {
+                        outputDiv3.innerHTML += '<p>>ping 192.168.11.3</p>';
+
+                        outputDiv3.innerHTML += '<p>Pinging 192.168.11.3 with 32 bytes of data:<br></p>';
+
+                        outputDiv3.innerHTML += '<p>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127</p>';
+
+                        outputDiv3.innerHTML += '<p>Ping statistics for 192.168.11.3:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                        //animation
+
+                        //alert message
+                        return;
+                    } else {
+                        alert("Try available IP Address. Copy IP Address by clicking device name button.");
+                        return;
+                    }
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+                // Clear input field after command execution
+                document.getElementById('inputCmd3').value = '';
+
+                // Scroll to the bottom after a slight delay
+                setTimeout(function () {
+                    var outputDiv3 = document.getElementById('output3');
+                    outputDiv3.scrollTop = outputDiv3.scrollHeight;
+                }, 50);
+            }
+
+
+            //Laptop 2
+            function executeCommand4() {
+
+                //alert("hello");
+
+
+                var input4 = document.getElementById('inputCmd4').value.trim();
+                var outputDiv4 = document.getElementById('output4');
+
+                if (input4 === '') {
+                    outputDiv4.innerHTML += '<p>>Please enter a command.</p>';
+                    return;
+                }
+
+                if (switchState == false) {
+                    alert('Please configure the switch.\n\nClick on button "Switch"');
+                }
+
+
+                if (switchState == true) {
+                    if (input4 === 'ping 192.168.10.2') {
+                        outputDiv4.innerHTML += '<p>>ping 192.168.10.2</p>';
+                        outputDiv4.innerHTML += '<p>Pinging 192.168.10.2 with 32 bytes of data:<br></p>';
+
+                        outputDiv4.innerHTML += '<p>Reply from 192.168.10.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.2: bytes=32 time<1ms TTL=127<br>Reply from 192.168.10.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.2: bytes=32 time<1ms TTL=127</p>';
+
+                        outputDiv4.innerHTML += '<p>Ping statistics for 192.168.10.2:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                        //animation
+
+                        //alert message
+                        return;
+                    }
+
+
+                    else if (input4 === 'ping 192.168.10.3') {
+                        outputDiv4.innerHTML += '<p>>ping 192.168.10.3</p>';
+
+                        outputDiv4.innerHTML += '<p>Pinging 192.168.10.3 with 32 bytes of data:<br></p>';
+
+                        outputDiv4.innerHTML += '<p>Reply from 192.168.10.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.3: bytes=32 time<1ms TTL=127<br>Reply from 192.168.10.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.3: bytes=32 time<1ms TTL=127</p>';
+
+                        outputDiv4.innerHTML += '<p>Ping statistics for 192.168.10.3:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                        //animation
+
+                        //alert message
+                        return;
+                    }
+
+
+                    else if (input4 === 'ping 192.168.11.3') {
+                        outputDiv4.innerHTML += '<p>>ping 192.168.11.3</p>';
+
+                        outputDiv4.innerHTML += '<p>Pinging 192.168.11.3 with 32 bytes of data:<br></p>';
+
+                        outputDiv4.innerHTML += '<p>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127</p>';
+
+                        outputDiv4.innerHTML += '<p>Ping statistics for 192.168.11.3:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                        //animation
+
+                        //alert message
+                        return;
+                    } else {
+                        alert("Try available IP Address. Copy IP Address by clicking device name button.");
+                        return;
+                    }
+
+
+                }
+
+
+                // Clear input field after command execution
+                document.getElementById('inputCmd4').value = '';
+
+                // Scroll to the bottom after a slight delay
+                setTimeout(function () {
+                    var outputDiv4 = document.getElementById('output4');
+                    outputDiv4.scrollTop = outputDiv4.scrollHeight;
+                }, 50);
+            }
+
+
+            //PC-2
+            function executeCommand5() {
+
+                //alert("hello");
+
+
+                var input5 = document.getElementById('inputCmd5').value.trim();
+                var outputDiv5 = document.getElementById('output5');
+
+                if (input5 === '') {
+                    outputDiv5.innerHTML += '<p>>Please enter a command.</p>';
+                    return;
+                }
+
+                if (switchState == false) {
+                    alert('Please configure the switch.\n\nClick on button "Switch"');
+                }
+
+
+                if (switchState == true) {
+                    if (input5 === 'ping 192.168.10.2') {
+                        outputDiv5.innerHTML += '<p>>ping 192.168.10.2</p>';
+                        outputDiv5.innerHTML += '<p>Pinging 192.168.10.2 with 32 bytes of data:<br></p>';
+
+                        outputDiv5.innerHTML += '<p>Reply from 192.168.10.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.2: bytes=32 time<1ms TTL=127<br>Reply from 192.168.10.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.2: bytes=32 time<1ms TTL=127</p>';
+
+                        outputDiv5.innerHTML += '<p>Ping statistics for 192.168.10.2:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                        //animation
+
+                        //alert message
+                        return;
+                    }
+
+
+                    else if (input5 === 'ping 192.168.10.3') {
+                        outputDiv5.innerHTML += '<p>>ping 192.168.10.3</p>';
+
+                        outputDiv5.innerHTML += '<p>Pinging 192.168.10.3 with 32 bytes of data:<br></p>';
+
+                        outputDiv5.innerHTML += '<p>Reply from 192.168.10.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.3: bytes=32 time<1ms TTL=127<br>Reply from 192.168.10.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.10.3: bytes=32 time<1ms TTL=127</p>';
+
+                        outputDiv5.innerHTML += '<p>Ping statistics for 192.168.10.3:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                        //animation
+
+                        //alert message
+                        return;
+                    }
+
+
+                    else if (input5 === 'ping 192.168.11.2') {
+                        outputDiv5.innerHTML += '<p>>ping 192.168.11.2</p>';
+
+                        outputDiv5.innerHTML += '<p>Pinging 192.168.11.2 with 32 bytes of data:<br></p>';
+
+                        outputDiv5.innerHTML += '<p>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127</p>';
+
+                        outputDiv5.innerHTML += '<p>Ping statistics for 192.168.11.2:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+                        //animation
+
+                        //alert message
+                        return;
+                    } else {
+                        alert("Try available IP Address. Copy IP Address by clicking device name button.");
+                        return;
+                    }
+
+
+                }
+
+
+                // Clear input field after command execution
+                document.getElementById('inputCmd5').value = '';
+
+                // Scroll to the bottom after a slight delay
+                setTimeout(function () {
+                    var outputDiv5 = document.getElementById('output5');
+                    outputDiv5.scrollTop = outputDiv5.scrollHeight;
+                }, 50);
+            }
+
+
+
+
+            function copyText1() {
+
+                var inputElement = document.getElementById('textToCopy1');
+
+                inputElement.removeAttribute("hidden"); // Temporarily show the input to allow selection
+                inputElement.select();
+                document.execCommand("copy");
+                inputElement.setAttribute("hidden", true); // Hide the input again
+
+                // Display message
+                var copyTextMessage1 = document.getElementById("copyTextMessage1");
+                copyTextMessage1.textContent = " Text copied!";
+                setTimeout(function () {
+                    copyTextMessage1.textContent = "";
+                }, 2000); // Clear the message after 2 seconds
+            }
+
+            function copyText2() {
+
+                var inputElement = document.getElementById('textToCopy2');
+
+                inputElement.removeAttribute("hidden"); // Temporarily show the input to allow selection
+                inputElement.select();
+                document.execCommand("copy");
+                inputElement.setAttribute("hidden", true); // Hide the input again
+
+                // Display message
+                var copyTextMessage2 = document.getElementById("copyTextMessage2");
+                copyTextMessage2.textContent = " Text copied!";
+                setTimeout(function () {
+                    copyTextMessage2.textContent = "";
+                }, 2000); // Clear the message after 2 seconds
+            }
+
+            function copyText3() {
+
+                var inputElement = document.getElementById('textToCopy3');
+
+                inputElement.removeAttribute("hidden"); // Temporarily show the input to allow selection
+                inputElement.select();
+                document.execCommand("copy");
+                inputElement.setAttribute("hidden", true); // Hide the input again
+
+                // Display message
+                var copyTextMessage3 = document.getElementById("copyTextMessage3");
+                copyTextMessage3.textContent = " Text copied!";
+                setTimeout(function () {
+                    copyTextMessage3.textContent = "";
+                }, 2000); // Clear the message after 2 seconds
+            }
+
+            function copyText4() {
+
+                var inputElement = document.getElementById('textToCopy4');
+
+                inputElement.removeAttribute("hidden"); // Temporarily show the input to allow selection
+                inputElement.select();
+                document.execCommand("copy");
+                inputElement.setAttribute("hidden", true); // Hide the input again
+
+                // Display message
+                var copyTextMessage4 = document.getElementById("copyTextMessage4");
+                copyTextMessage4.textContent = " Text copied!";
+                setTimeout(function () {
+                    copyTextMessage4.textContent = "";
+                }, 2000); // Clear the message after 2 seconds
+            }
 
 
 

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Command Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .command {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .description {
+            margin-bottom: 30px;
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border: none;
+            background: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Switch Command Guide</h1>
+        <br>
+        <div class="command">
+            <p>enable <button class="copy-btn btn btn-sm btn-light"><i class="ri-file-copy-line"></i></button></p>
+        </div>
+        <div class="description">
+            <p>This command switches the device into a mode where you can make configuration changes.</p>
+        </div>
+
+        <div class="command">
+            <p>vlan 10 office_network <button class="copy-btn btn btn-sm btn-light"><i
+                        class="ri-file-copy-line"></i></button></p>
+            <p>VLAN 10 added: Name: office_network</p>
+        </div>
+        <div class="description">
+            <p>This command creates a new VLAN (Virtual Local Area Network) with an ID of 10 and gives it the name
+                "office_network".</p>
+        </div>
+
+        <div class="command">
+            <p>vlan 20 college_network <button class="copy-btn btn btn-sm btn-light"><i
+                        class="ri-file-copy-line"></i></button></p>
+            <p>VLAN 20 added: Name: college_network</p>
+        </div>
+        <div class="description">
+            <p>This command creates another VLAN with an ID of 20 and names it "college_network".</p>
+        </div>
+
+        <div class="command">
+            <p>exit<button class="copy-btn btn btn-sm btn-light"><i class="ri-file-copy-line"></i></button></p>
+            <p>APPLY completed.<br>&ensp;Exiting....</p>
+        </div>
+        <div class="description">
+            <p>This command exits the configuration mode, meaning you've finished making changes and are ready to apply
+                them.</p>
+        </div>
+
+        <div class="command">
+            <p>show vlan<button class="copy-btn btn btn-sm btn-light"><i class="ri-file-copy-line"></i></button></p>
+            <p>
+            <table style="border: 2px solid white;">
+                <tr style="border: 2px solid white;">
+                    <th style="border: 2px solid white;">&ensp;VLAN&ensp;</th>
+                    <th style="border: 2px solid white;">&ensp;Name</th>
+                    <th style="border: 2px solid white;">&ensp;Status&ensp;</th>
+                </tr>
+                <tr style="border: 2px solid white;">
+                    <td style="border: 2px solid white;">&ensp;10&ensp;</td>
+                    <td style="border: 2px solid white;">&ensp;office_network&ensp;</td>
+                    <td style="border: 2px solid white;">&ensp;active&ensp;</td>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid white;">&ensp;20&ensp;</td>
+                    <td style="border: 2px solid white;">&ensp;college_network&ensp;</td>
+                    <td style="border: 2px solid white;">&ensp;active&ensp;</td>
+                </tr>
+            </table>
+
+
+            </p>
+        </div>
+        <div class="description">
+            <p>This command shows the current VLANs on the switch and their status.</p>
+        </div>
+
+        <h3>Summary</h3>
+        <p>Here’s how all the steps come together:</p>
+        <ul>
+            <li><strong>Enable configuration mode:</strong> You use the command <strong>switch>enable</strong> to allow
+                configuration changes.</li>
+            <li><strong>Create VLANs:</strong> Use the commands <strong>switch>vlan 10 office_network</strong> and
+                <strong>switch>vlan 20 college_network</strong> to create VLANs for different network segments.</li>
+            <li><strong>Exit configuration mode:</strong> Use the command <strong>switch#exit</strong> to apply the
+                changes and exit.</li>
+            <li><strong>Show VLAN status:</strong> Use <strong>switch#show vlan</strong> to display the VLANs and their
+                statuses.</li>
+        </ul>
+        <p>These steps help you organize and manage your network effectively by creating and monitoring separate virtual
+            networks within a physical network device.</p>
+
+        <br>
+        <center>
+            <a href="Switch Command Guide.pdf" download><button class="btn btn-dark btn-sm">Download PDF</button></a>
+        </center>
+        <br><br>
+    </div>
+
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const paragraph = button.parentElement;
+                const range = document.createRange();
+                range.selectNode(paragraph.firstChild);
+                window.getSelection().removeAllRanges(); // Clear existing selections
+                window.getSelection().addRange(range); // Select the text
+                try {
+                    document.execCommand('copy'); // Copy to clipboard
+                    alert('Text copied: ' + paragraph.textContent.trim());
+                } catch (err) {
+                    alert('Failed to copy text');
+                }
+                window.getSelection().removeAllRanges(); // Clear selection
+            });
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

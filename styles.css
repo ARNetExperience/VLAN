@@ -1020,3 +1020,35 @@ button:active {
   padding: 10px 6px;
   
 }
+
+
+
+
+
+.console {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: monospace;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+
+  margin: auto;
+}
+
+.input {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 5px;
+}
+
+
+
+.output {
+  min-height: 500px;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}

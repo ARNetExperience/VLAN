@@ -16,7 +16,6 @@ Switch Configuration CLI:-
 
 switch>enable
 
-
 switch#vlan 10 office_network
 VLAN 10 added:
 	Name: office_network
@@ -42,15 +41,9 @@ PC1 Command Prompt:-
 
 Pinging 192.168.11.2 with 32 bytes of data:
 
-Reply from 192.168.11.2: bytes=32 time=1ms TTL=127
-Reply from 192.168.11.2: bytes=32 time<1ms TTL=127
-Reply from 192.168.11.2: bytes=32 time=1ms TTL=127
-Reply from 192.168.11.2: bytes=32 time<1ms TTL=127
+Reply from 192.168.11.2: bytes=32 time=1ms TTL=127\nReply from 192.168.11.2: bytes=32 time<1ms TTL=127\nReply from 192.168.11.2: bytes=32 time=1ms TTL=127\nReply from 192.168.11.2: bytes=32 time<1ms TTL=127
 
-Ping statistics for 192.168.11.2:
-	Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
-Minimum = 0ms, Maximum = 1ms, Average = 0ms
+Ping statistics for 192.168.11.2:\n&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\nMinimum = 0ms, Maximum = 1ms, Average = 0ms
 
 
 LAN
@@ -64,3 +57,17 @@ MAN
 WAN
 
 SAN
+
+
+TODO:-
+	-dhcp video link
+	-ssh add command prompt pinging msg whole
+	-LAN packet details of ARP 25th May 2024
+	-LAN frontend and back ARP 25th May 2024
+	
+	-add simulations VLAN 26th May 2024
+	-SSH packet details
+	-VLAN packet details
+	
+
+	
