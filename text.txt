@@ -58,16 +58,32 @@ WAN
 
 SAN
 
+moveLeft44
+moveLeft4
+moveLeft33
+moveLeft3
+moveUp33
+moveUp3
+moveUp22
+moveUp2
+moveLeft
+moveFromRight
+moveFromRight1
+moveRight1
+moveRight
+
 
 TODO:-
-	-dhcp video link
-	-ssh add command prompt pinging msg whole
-	-LAN packet details of ARP 25th May 2024
-	-LAN frontend and back ARP 25th May 2024
-	
-	-add simulations VLAN 26th May 2024
+	-LAN documentation
+	-LAN video
+	-DHCP video link
+
+	ME:-
 	-SSH packet details
+	-add simulations VLAN 
 	-VLAN packet details
+	
+	
 	
 
 	
