@@ -74,14 +74,28 @@ moveRight
 
 
 TODO:-
-	-LAN documentation
-	-LAN video
-	-DHCP video link
-
-	ME:-
-	-SSH packet details
+	
 	-add simulations VLAN 
 	-VLAN packet details
+	
+
+
+	simulations:
+	-PC1toLaptop1
+	-PC2toLaptop2
+	-Laptop2toPC2
+	-Laptop1toPC1
+	-Laptop1toLaptop2
+	-Laptop2toLaptop1
+	-Laptop1toPC2
+	-Laptop2toPC1
+	-PC1toLaptop2
+	-PC1toPC2
+
+	TODO:
+	
+	-PC2toLaptop1
+	-PC2toPC1
 	
 	
 	
